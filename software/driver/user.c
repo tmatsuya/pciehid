@@ -16,12 +16,17 @@
 
 int main(int argc,char **argv)
 {
-	int fd, rc, i, j;
+	int fd, key;
 
 	if ((fd=open(PCIEHID_DEVICE,O_RDONLY)) <0) {
 		fprintf(stderr,"cannot open %s\n",PCIEHID_DEVICE);
 		return -1;
 	}
+
+	read(fd, &key, sizeof(int));
+
+	while (1)
+		printf("Key=%X\n", key);
 
 	close(fd);
 

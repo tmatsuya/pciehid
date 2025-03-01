@@ -15,8 +15,8 @@ clean:
 
 install:
 	install -m 644 $(PWD)/*.ko /lib/modules/`uname -r`/kernel/drivers/misc
-	if [ -d /etc/udev/rules.d -a ! -f /etc/udev/rules.d/99-tcam.rules ] ; then \
-		install -m 644 99-tcam.rules /etc/udev/rules.d ; \
+	if [ -d /etc/udev/rules.d -a ! -f /etc/udev/rules.d/99-pciehid.rules ] ; then \
+		install -m 644 99-pciehid.rules /etc/udev/rules.d ; \
 	fi
 	depmod -a
 endif

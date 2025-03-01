@@ -1,0 +1,1 @@
+KERNEL=="pciehid*"		MODE="0666"
