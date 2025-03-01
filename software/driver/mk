@@ -1,11 +1,11 @@
 make clean
 # build kernel driver
-echo Buidling TCAM driver....
+echo Buidling PCIe HID driver....
 make
 sudo make install
 #gcc -O -o user user.c tcam_lib.c
 gcc -O -o user user.c
-# load tcam driver
+# load pciehid driver
 sudo rmmod pciehid
 sudo modprobe pciehid
 

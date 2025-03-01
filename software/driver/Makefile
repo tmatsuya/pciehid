@@ -1,5 +1,5 @@
 ifneq ($(KERNELRELEASE),)
-obj-m	 	:= pciehid_main.o
+obj-m	 	:= pciehid.o
 #obj-m		:= tcam.o
 #tcam-y	 	:= pciehid_main.o
 else
