@@ -10,7 +10,7 @@
 
 //#define DEBUG
 
-#define	PCIEHID_DEVICE	"/dev/pciehid"
+#define	PCIEHID_DEVICE	"/dev/pciehid/0"
 
 //#define	NMAX		(4)
 
