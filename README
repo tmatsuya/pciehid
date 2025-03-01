@@ -22,4 +22,11 @@ You will need:
 2- cd boards/kc705/synthesis
 3- ./load.sh (or ./flash.sh)
 
+[>Software
+1- cd software/driver
+2- ./mk
+   (build kernel driver & user app)
+3- ./user
+   (run user application)
+
 [> History
