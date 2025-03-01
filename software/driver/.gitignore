@@ -1,0 +1,15 @@
+*.o
+*.o.cmd
+*.o.d
+*.ko
+*.ko.cmd
+*.o.ur-safe
+.cache.mk
+.tmp_versions
+Module.symvers
+modules.order
+
+.Module.symvers.cmd
+.modules.order.cmd
+.tcam.mod.cmd
+tcam.mod

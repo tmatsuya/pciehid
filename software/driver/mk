@@ -1,0 +1,11 @@
+make clean
+# build kernel driver
+echo Buidling TCAM driver....
+make
+sudo make install
+#gcc -O -o user user.c tcam_lib.c
+gcc -O -o user user.c
+# load tcam driver
+sudo rmmod pciehid
+sudo modprobe pciehid
+

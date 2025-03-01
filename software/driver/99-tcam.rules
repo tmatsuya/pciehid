@@ -1,0 +1,1 @@
+KERNEL=="tcam*"		MODE="0666"
