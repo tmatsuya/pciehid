@@ -23,10 +23,11 @@ int main(int argc,char **argv)
 		return -1;
 	}
 
-	read(fd, &key, sizeof(int));
 
-	while (1)
+	while (1) {
+		read(fd, &key, sizeof(int));
 		printf("Key=%X\n", key);
+	}
 
 	close(fd);
 
